@@ -1,0 +1,17 @@
+<html lang="en">
+{%load static%}
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>queue (general doctor) detail</title>
+</head>
+<style>
+  body{
+    background-image: url("{% static 'background.jpg' %}");
+  }
+</style>
+<body>
+{%for k,v in result.items %}
+<p>{{k}} &nbsp {{v.patname}} &nbsp {{v.doc}} &nbsp {{v.pnum}}</P>
+{% endfor %}
+</body>
+</html>

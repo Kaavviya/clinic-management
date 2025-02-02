@@ -1,0 +1,58 @@
+<html lang="en">
+  {%load static%}
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>smc clinic doctor window</title>
+      <style>
+         .option {
+    height: 500px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+            text-align:center;
+            color:rgb(15, 11, 11);
+            padding:20px;
+            font-family:'Times New Roman';
+        }
+        body {
+            background-image: url("{% static 'doctorhomenew.jpg' %}");
+            background-size:140%;
+            background-position:center;
+            
+        }
+        button{
+          border: black;
+          font-size: medium;
+          cursor: pointer;
+          appearance: none;
+          background-color: inherit;
+            transition: transform .7s ease-in-out;
+          margin-left:10px;
+  
+        }
+        
+
+      </style>
+   </head>
+   <body>
+      
+      <h1> Doctor csp Home </h1>
+      <div class="main-options">
+         <a href="/doctor/doctorcsphome/patienthis">
+             <div class="option">
+                 <button type="submit"><b>View Patient History</b></button>
+             </div>
+            
+         </a>
+         <a href='/doctor/doctorcsphome/showcspqueue'>
+            <div class='option'>
+              <button type='submit'><b>show csp queue</b></button>
+            </div>
+          </a>
+        </div>
+      </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>SMC CLINIC  {% block title %}{% endblock title %}LOGIN</title>
+</head>
+<body>
+    {% block body %}{% endblock body%}
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn">Login</button>
+                <button type="button" class="toggle-btn">Register</button>
+            </div>
+        </div>
+        <div class="social-icons">
+            <img src="C:\Users\jeesee\Downloads\gp.png">
+            <img src="C:\Users\jeesee\Downloads\fb.png">
+            <img src="C:\Users\jeesee\Downloads\tw.png">
+        <form class="input-group" method='post'>
+            {% csrf_token %}
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="text" class="input-field" placeholder="Emter Password" required>
+            <input type="checkbox" class="check-box" ><span>Remember Password</span>
+        </form>
+        
+        
+        </div>
+
+    </div>
+    
